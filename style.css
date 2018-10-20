@@ -1,3 +1,8 @@
+.title {
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: 300;
+}
 .wrapper {
     display: flex;
     flex: 1;
@@ -7,13 +12,11 @@
 
 .clock {
     position: relative;
-    width: 20rem;
-    height: 20rem;
+    width: 30rem;
+    height: 30rem;
     margin: 50px auto;
-    padding: 2rem;
-    border: 20px grey solid;
+    border: 20px solid grey;
     border-radius: 50%;
-    
 }
 
 .clock-face {
@@ -21,6 +24,9 @@
     width: 100%;
     height: 100%;
     transform: translateY(-3px);
+    background: url(clock-face.png);
+    background-size: cover;
+    
 }
 
 .hand {
@@ -47,8 +53,8 @@
 
 .min-hand {
     height: 15px;
-    border-bottom-right-radius: 50%;
-    border-top-right-radius: 50%;
+    border-radius: 50%;
+
 }
 
 .second-hand {
