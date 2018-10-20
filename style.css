@@ -29,4 +29,8 @@
     width: 50%;
     height: 6px;
     background: black;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0, 3.11, 0.58, 1);
 }
