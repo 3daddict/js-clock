@@ -18,10 +18,11 @@ setInterval(function setDate(){
     $('.min-hand').css({ transform: 'rotate(' + minsDegrees + 'deg)' });
     $('.hour-hand').css({ transform: 'rotate(' + hoursDegrees + 'deg)' });
 
+    //Conditional to reset the transition glitch when hand is at 90deg
     if(secondsDegrees === 90) {
-        allHands.forEach(hand => hand.style.transition = 'none')  // remove the all 0.05s transition
+        allHands.css({ transition: 'none'});
       } else {
-        allHands.forEach(hand => hand.style.transition = '')      // using '' removes the inline style and reverts back to the stylesheet
-      }
+        allHands.css({ transition: ''});
+      };
 
 }, 1000);
